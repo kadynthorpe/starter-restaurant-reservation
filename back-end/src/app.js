@@ -12,6 +12,30 @@ const tablesRouter = require("./tables/tables.router");
 
 const app = express();
 
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+
+const allowedOrigins = ["http://localhost:3000"];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
+
+// ... other middleware and routes ...
+
+module.exports = app;
+
+
 app.use(cors());
 app.use(express.json());
 
