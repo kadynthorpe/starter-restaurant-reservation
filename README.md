@@ -93,6 +93,8 @@ Run `npx knex` commands from within the `back-end` folder, which is where the `k
 
 If you have trouble getting the server to run, reach out for assistance.
 
+Deployed Site: https://restaurant-reservation-bd4j.onrender.com/dashboard
+
 ## Running tests
 
 This project has unit, integration, and end-to-end (e2e) tests. You have seen unit and integration tests in previous projects.
