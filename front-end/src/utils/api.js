@@ -230,4 +230,3 @@ export async function updateReservation(reservationId, reservation, signal) {
  */
 export async function cancelReservation(reservation_id, signal) {
   const url = `${API_BASE_URL}/reservations/${reservation_id}/status`;
- 
