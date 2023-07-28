@@ -93,7 +93,7 @@ Run `npx knex` commands from within the `back-end` folder, which is where the `k
 
 If you have trouble getting the server to run, reach out for assistance.
 
-Deployed Site: https://restaurant-reservation-bd4j.onrender.com/dashboard
+Deployed Site: https://front-restaurant-reservation-od46.onrender.com/dashboard
 
 ## Running tests
 
