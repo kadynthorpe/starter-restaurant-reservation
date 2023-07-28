@@ -5,7 +5,7 @@ const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 // const nextId = require("../utils/nextId");
 const service = require("./reservations.service");
 const hasProperties = require("../errors/hasProperties");
-const { request } = require("../app");
+
 
 const REQUIRED_PROPERTIES = [
   "first_name",
