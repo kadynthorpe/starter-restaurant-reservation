@@ -17,18 +17,26 @@ function ReservationsList({ reservationParam }) {
   } = reservationParam;
 
   const cancelHandler = () => {
-    const confirmBox = window.confirm(
-      "Do you want to cancel this reservation? This cannot be undone."
-    );
+  const confirmBox = window.confirm(
+    "Do you want to cancel this reservation? This cannot be undone."
+  );
 
-    if (confirmBox === true) {
-      cancelReservation(reservationParam, reservation_id)
-        .then(() => history.go())
-        .catch((error) => console.log("error", error));
-    }
+  if (confirmBox === true) {
+    cancelReservation(reservation_id)
+      .then(() => history.go())
+      .catch((error) => console.log("error", error));
+  }
 
-    return null;
-  };
+  return null;
+};
+By making this change, the cancelReservation function should receive the correct reservation_id and successfully cancel the reservation on the server. Remember to make sure that the reservation_id passed to the cancelReservation function is a valid integer and corresponds to the reservation you want to cancel.
+
+Additionally, after canceling the reservation, the code uses history.go() to reload the page. This might not be necessary if your page is set up to automatically refresh or re-render after an API call. You can try removing the history.go() line if it's not needed for your specific use case.
+
+
+
+
+
 
   return (
     <>
