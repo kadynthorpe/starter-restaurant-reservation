@@ -1,5 +1,7 @@
 # Capstone: Restaurant Reservation System
 
+Deployed Site: [https://front-restaurant-reservation-od46.onrender.com/dashboard](https://front-restaurant-reservation-od46.onrender.com)
+
 > You have been hired as a full stack developer at _Periodic Tables_, a startup that is creating a reservation system for fine dining restaurants.
 > The software is used only by restaurant personnel when a customer calls to request a reservation.
 > At this point, the customers will not access the system online.
@@ -92,8 +94,6 @@ Run `npx knex` commands from within the `back-end` folder, which is where the `k
 1. Run `npm run start:dev` to start your server in development mode.
 
 If you have trouble getting the server to run, reach out for assistance.
-
-Deployed Site: https://front-restaurant-reservation-od46.onrender.com/dashboard
 
 ## Running tests
 
