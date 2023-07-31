@@ -29,13 +29,6 @@ function ReservationsList({ reservationParam }) {
 
   return null;
 };
-By making this change, the cancelReservation function should receive the correct reservation_id and successfully cancel the reservation on the server. Remember to make sure that the reservation_id passed to the cancelReservation function is a valid integer and corresponds to the reservation you want to cancel.
-
-Additionally, after canceling the reservation, the code uses history.go() to reload the page. This might not be necessary if your page is set up to automatically refresh or re-render after an API call. You can try removing the history.go() line if it's not needed for your specific use case.
-
-
-
-
 
 
   return (
