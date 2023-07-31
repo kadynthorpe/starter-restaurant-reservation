@@ -12,7 +12,7 @@ const tablesRouter = require("./tables/tables.router");
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:3000", "https://www.yourapp.onrender.com"];
+const allowedOrigins = ["http://localhost:3000", "https://front-restaurant-reservation-od46.onrender.com"];
 const corsOptions = {
   origin: (origin, callback) => {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
