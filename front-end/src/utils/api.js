@@ -5,7 +5,6 @@
  * The default values is overridden by the `API_BASE_URL` environment variable.
  */
 import formatReservationDate from "./format-reservation-date";
-import formatReservationTime from "./format-reservation-date";
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://localhost:5001";
 
@@ -231,4 +230,12 @@ export async function updateReservation(reservationId, reservation, signal) {
  */
 export async function cancelReservation(reservation_id, signal) {
   const url = `${API_BASE_URL}/reservations/${reservation_id}/status`;
+  const options = {
+    method: "PUT",
+    headers,
+    body: JSON.stringify({ data: { status: "cancelled" } }),
+    signal,
+  };
+  return await fetchJson(url, options);
 }
+
