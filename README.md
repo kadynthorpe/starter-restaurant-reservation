@@ -1,6 +1,6 @@
 # Capstone: Restaurant Reservation System
 
-Deployed Site:[ [https://front-restaurant-reservation-od46.onrender.com/dashboard](https://front-restaurant-reservation-od46.onrender.com)](https://front-restaurant-reservation-od46.onrender.com/dashboard)
+Deployed Site:[ [https://front-restaurant-reservation-od46.onrender.com/dashboard](https://front-restaurant-reservation-od46.onrender.com)]
 
 > You have been hired as a full stack developer at _Periodic Tables_, a startup that is creating a reservation system for fine dining restaurants.
 > The software is used only by restaurant personnel when a customer calls to request a reservation.
